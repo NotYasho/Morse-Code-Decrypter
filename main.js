@@ -80,7 +80,11 @@ translate.addEventListener('click', function() {
 		}
 
 		transated = translated.join('');
-		h1.innerText = transated;
+		if (!translated.length > 0) {
+			h1.innerText = '#' * characters.length;
+			return;
+		}
+		return h1.innerText = transated;
 	}
 });
 
