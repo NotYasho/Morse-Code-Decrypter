@@ -1,0 +1,104 @@
+:root {
+	--primary: #ffffff;
+	--background: #6e46ff;
+	--danger: #ff5252;
+	--input-before: #ffffff54;
+	--input-after: #ffffff9c;
+}
+
+* {
+	font-family: 'Consolas', monospace;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--primary);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	text-align: center;
+	padding-top: 14vh;
+	padding-bottom: 10vh;
+	transition: 0.3s ease-in-out;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease-in-out;
+	margin-bottom: 5vh;
+}
+
+input {
+	text-align: center;
+	font-weight: 500;
+	width: 30em;
+	padding: 1rem;
+	border: none;
+	border-radius: 5px;
+	background: var(--input-after);
+	color: rgb(0, 0, 0);
+	outline: none;
+	transition: 0.5s ease;
+	margin-right: .5em;
+}
+
+#mute {
+	width: 6em;
+	outline: none;
+	background: rgba(255, 255, 255, 0.123);
+	color: var(--primary);
+	border: none;
+	border-radius: 5px;
+	padding: 1rem;
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+input::placeholder {
+	color: rgba(0, 0, 0, 0.596);
+}
+input:focus {
+	background: var(--input-after);
+}
+
+#mute:hover {
+	background: var(--input-before);
+}
+
+#translate {
+	margin: 0 auto;
+	font-weight: 500;
+	width: 10em;
+	padding: 1rem;
+	border: none;
+	border-radius: 5px;
+	background: rgba(255, 230, 0, 0.527);
+	color: rgb(0, 0, 0);
+	outline: none;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+#translate:hover {
+	background: rgba(255, 230, 0, 0.749);
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
