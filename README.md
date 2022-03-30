@@ -1,3 +1,3 @@
 # Morse-Code-Decrypter
 
-Visit the site on [Github Pages](notyasho.github.io/more-code-decrypter)
+Visit the site on [Github Pages](https://notyasho.github.io/Morse-Code-Decrypter/)
